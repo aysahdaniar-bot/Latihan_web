@@ -1,25 +1,169 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Riwayat Hidup - Ayesha</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 
-header {
-    background-color: #e84393q;
-    color: white;
-    padding: 30px;
-    border-radius: 10px;
-}
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #ffe5ec 0%, #fef3f7 50%, #d8f3dc 100%);
+            background-attachment: fixed;
+            color: #4a4e69;
+            padding: 30px 15px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
 
-section {
-    background: white;
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 10px;
-}
-section:hover {
-    transform: translateY(-5px);
-    transition: 0.3s;
-}
+        .card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            max-width: 500px;
+            width: 100%;
+            padding: 35px 25px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(255, 182, 193, 0.4);
+            border: 4px solid #ffffff;
+            position: relative;
+        }
+
+        h1 {
+            font-family: 'Fredoka', sans-serif;
+            color: #ff758f;
+            text-align: center;
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 0px #ffe5ec;
+        }
+
+        /* Avatar Pengganti Foto */
+        .profile-avatar {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #ffb3c1, #ff758f);
+            color: #ffffff;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 40px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            box-shadow: 0 8px 15px rgba(255, 117, 143, 0.3);
+            border: 4px solid #ffffff;
+        }
+
+        h2 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 16px;
+            display: inline-block;
+            padding: 6px 18px;
+            border-radius: 20px;
+            margin-top: 22px;
+            margin-bottom: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        h2:nth-of-type(1) { background-color: #ffc6ff; color: #7209b7; }
+        h2:nth-of-type(2) { background-color: #bdb2ff; color: #3a0ca3; }
+        h2:nth-of-type(3) { background-color: #a0c4ff; color: #0077b6; }
+        h2:nth-of-type(4) { background-color: #9bf6ff; color: #0096c7; }
+        h2:nth-of-type(5) { background-color: #caffbf; color: #2d6a4f; }
+        h2:nth-of-type(6) { background-color: #ffd6a5; color: #d97706; }
+
+        ul, ol {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        li {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        ul li::marker {
+            color: #ff758f;
+            font-size: 1.2em;
+        }
+
+        .moto-container {
+            background: #fff0f5;
+            border: 2px dashed #ffb3c1;
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .moto-container p {
+            margin: 0;
+            font-style: italic;
+            font-weight: 700;
+            color: #ff4d6d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>✨ Daftar Riwayat Hidup ✨</h1>
+        
+        <!-- Avatar Pengganti Foto (Menampilkan Huruf A) -->
+        <div class="profile-avatar">A</div>
+
+        <h2>🎀 Profil Singkat</h2>
+        <ul>
+            <li><b>Nama Lengkap:</b> Ayesha Putri Rizki Daniar</li>
+            <li><b>Tanggal Lahir:</b> 8 Juni 2010</li>
+            <li><b>Umur:</b> 16 Tahun</li>
+            <li><b>Jurusan:</b> PPLG (Pengembangan Perangkat Lunak dan Gim)</li>
+            <li><b>Asal Sekolah:</b> SMP Negeri 4 Depok</li>
+        </ul>
+
+        <h2>🎓 Riwayat Pendidikan</h2>
+        <ol>
+            <li>TK Islam Al Fatony - TK A sampai TK B (2015 - 2017)</li>
+            <li>SDN Sukamaju 10 (2017 - 2023)</li>
+            <li>SMP Negeri 4 Depok (2023 - 2026)</li>
+            <li>SMKN 1 Depok (2026 - Sekarang)</li>
+        </ol>
+
+        <h2>🏛️ Riwayat Organisasi</h2>
+        <ul>
+            <li>Anggota MPK - SMK (2026 - Sekarang)</li>
+        </ul>
+
+        <h2>💡 Keterampilan (Skill)</h2>
+        <ul>
+            <li>Pengolahan Data</li>
+            <li>Editing Video</li>
+            <li>Desain Visual Dasar</li>
+        </ul>
+
+        <h2>🎧 Hobi</h2>
+        <ul>
+            <li>Bernyanyi</li>
+            <li>Dance</li>
+            <li>Mendengarkan Musik</li>
+            <li>Membaca</li>
+            <li>Menonton</li>
+        </ul>
+
+        <h2>🌟 Moto Hidup</h2>
+        <div class="moto-container">
+            <p>"Satu langkah keberanian, satu lompatan menuju perubahan."</p>
+        </div>
+    </div>
+
+</body>
+</html>
+            
